@@ -1,3 +1,4 @@
+<true>
 "use strict";
 
 const MODO_CEGUEIRA = true;
@@ -766,3 +767,4 @@ document.addEventListener("DOMContentLoaded", inicializar);
 
 window.finalizarPedido = finalizarPedido;
 window.novaCompra = novaCompra;
+</true>
