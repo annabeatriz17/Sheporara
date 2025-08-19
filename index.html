@@ -12,6 +12,86 @@
 
     <body>
 
+        <header class="cabecalho-produto" role="banner">
+                <div class="marca-logo">
+                    <h1 class="logo-sifurrah">SIFURRAH</h1>
+                    <p class="slogan-marca">Fragrâncias Exclusivas de Luxo</p>
+                </div>
+
+                <div class="container-cabecalho">
+                    <div class="imagem-principal">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
+                            alt="Frasco de perfume Essence de Suvacu" class="foto-produto">
+                            <aside class="badges-produto" aria-label="Destaques do produto">
+                                <ul>
+                                    <li class="badge novo">
+                                        <span aria-hidden="true">🆕</span> <span>LANÇAMENTO</span>
+                                    </li>
+                                    <li class="badge melhor-vendido">
+                                        <span aria-hidden="true">🏆</span> <span>Nº1 EM VENDAS</span>
+                                    </li>
+                                    <li class="badge exclusivo">
+                                        <span aria-hidden="true">💎</span> <span>EDIÇÃO LIMITADA</span>
+                                    </li>
+                                </ul>
+                            </aside>
+                    </div>
+
+                    <div class="info-cabecalho">
+                        <div class="titulo-produto">
+                            <h1 class="nome-perfume">Essencia DE SUVACU</h1>
+                            <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
+                        </div>
+
+                        <section class="propaganda-principal">
+                            <p class="frase-impacto">"Uma fragrância que desperta mistério e sedução a cada borrifo"</p>
+                            <p class="descricao-luxo">Criado pelos melhores perfumistas franceses com ingredientes raros
+                                e preciosos. Uma experiência olfativa única que marca sua presença por onde você passa.
+                            </p>
+                        </section>
+
+                        <section class="credenciais-produto">
+                            <div class="avaliacao-estrelas" role="img" aria-label="Avaliação do produto">
+                                <span class="estrelas" aria-label="5 estrelas">★★★★★</span>
+                                <span class="texto-avaliacao">4,8 de 5 estrelas | 2.847 clientes satisfeitos</span>
+                            </div>
+
+                            <ul class="premios-reconhecimentos" aria-label="Prêmios e reconhecimentos">
+                                <span class="premio">
+                                    <span aria-hidden="true">🏆</span>
+                                    <span>Melhor Fragrância Feminina 2024</span>
+                                </span>
+                                <span class="premio">
+                                    <span aria-hidden="true">🌟</span>
+                                    <span>Revista Vogue Beauty Awards</span>
+                                </span>
+                            </ul>
+
+                            <aside class="disponibilidade" aria-label="Informações de disponibilidade">
+                                <p class="estoque-urgencia">
+                                    <span aria-hidden="true">⚡</span>
+                                    Apenas 7 unidades restantes em estoque
+                                </p>
+                                <p class="frete-info">
+                                    <span aria-hidden="true">🚚</span>
+                                    Frete grátis para todo Brasil acima de R$ 200
+                                </p>
+                            </aside>
+                        </section>
+                    </div>
+                </div>
+
+                <aside class="oferta-especial" aria-label="Oferta especial">
+                    <div class="banner-oferta">
+                        <span class="texto-oferta">
+                            <span aria-hidden="true">🔥</span>
+                            OFERTA ESPECIAL: 10% de desconto à vista no PIX
+                        </span>
+                        <span class="tempo-limitado">Por tempo limitado!</span>
+                    </div>
+                </aside>
+            </header>
+            
                     <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
             <div class="secao-extra">
                 <!-- PROBLEMA: h2 usado sem hierarquia apropriada -->
@@ -81,92 +161,7 @@
         <!-- PROBLEMA: Esta div deveria ser uma tag semântica mais apropriada -->
         <div id="conteudo-principal">
             <!-- PROBLEMA: Esta div deveria usar uma tag semântica para cabeçalho -->
-            <div class="cabecalho-produto">
-                <div class="marca-logo">
-                    <!-- PROBLEMA: h1 não deveria estar dentro de um cabeçalho secundário -->
-                    <h5 class="logo-sifurrah">SIFURRAH</h5>
-                    <p class="slogan-marca">Fragrâncias Exclusivas de Luxo</p>
-                </div>
-
-                <div class="container-cabecalho">
-                    <div class="imagem-principal">
-                        <!-- PROBLEMA: Alt text muito genérico e sem contexto -->
-                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
-                            alt="perfume fedido" class="foto-produto">
-                        <!-- PROBLEMA: Div sem papel semântico definido -->
-                        <div class="badges-produto">
-                            <!-- PROBLEMA: Spans sem contexto semântico -->
-                            <span class="badge novo">
-                                <span>🆕</span> LANÇAMENTO
-                            </span>
-                            <span class="badge melhor-vendido">
-                                <span>🏆</span> Nº1 EM VENDAS
-                            </span>
-                            <span class="badge exclusivo">
-                                <span>💎</span> EDIÇÃO LIMITADA
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="info-cabecalho">
-                        <div class="titulo-produto">
-                            <!-- PROBLEMA: h2 usado antes de h1 na página -->
-                            <h2 class="nome-perfume">Essencia DE SUVACU</h2>
-                            <p class="subtitulo-perfume">O Perfume dos Sonhos</p>
-                        </div>
-
-                        <div class="propaganda-principal">
-                            <p class="frase-impacto">"Uma fragrância que desperta mistério e sedução a cada borrifo"</p>
-                            <p class="descricao-luxo">Criado pelos melhores perfumistas franceses com ingredientes raros
-                                e preciosos. Uma experiência olfativa única que marca sua presença por onde você passa.
-                            </p>
-                        </div>
-
-                        <div class="credenciais-produto">
-                            <!-- PROBLEMA: Avaliação sem contexto semântico -->
-                            <div class="avaliacao-estrelas">
-                                <span class="estrelas">★★★★★</span>
-                                <span class="texto-avaliacao">4,8 de 5 estrelas | 2.847 clientes satisfeitos</span>
-                            </div>
-
-                            <!-- PROBLEMA: Lista de prêmios sem estrutura semântica -->
-                            <div class="premios-reconhecimentos">
-                                <span class="premio">
-                                    <span>🏆</span>
-                                    Melhor Fragrância Feminina 2024
-                                </span>
-                                <span class="premio">
-                                    <span>🌟</span>
-                                    Revista Vogue Beauty Awards
-                                </span>
-                            </div>
-
-                            <div class="disponibilidade">
-                                <!-- PROBLEMA: Informação urgente sem marcação semântica -->
-                                <p class="estoque-urgencia">
-                                    <span>⚡</span>
-                                    Apenas 7 unidades restantes em estoque
-                                </p>
-                                <p class="frete-info">
-                                    <span>🚚</span>
-                                    Frete grátis para todo Brasil acima de R$ 200
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROBLEMA: Banner de oferta sem papel semântico -->
-                <div class="oferta-especial">
-                    <div class="banner-oferta">
-                        <span class="texto-oferta">
-                            <span>🔥</span>
-                            OFERTA ESPECIAL: 10% de desconto à vista no PIX
-                        </span>
-                        <span class="tempo-limitado">Por tempo limitado!</span>
-                    </div>
-                </div>
-            </div>
+            
 
             <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
             <div class="secao-info">
