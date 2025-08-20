@@ -11,7 +11,6 @@
     </head>
 
     <body>
-
         <header class="cabecalho-produto" role="banner">
                 <div class="marca-logo">
                     <h1 class="logo-sifurrah">SIFURRAH</h1>
@@ -23,17 +22,11 @@
                         <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=500&fit=crop&crop=center&q=80"
                             alt="Frasco de perfume Essence de Suvacu" class="foto-produto">
                             <aside class="badges-produto" aria-label="Destaques do produto">
-                                <ul>
-                                    <li class="badge novo">
-                                        <span aria-hidden="true">🆕</span> <span>LANÇAMENTO</span>
-                                    </li>
-                                    <li class="badge melhor-vendido">
-                                        <span aria-hidden="true">🏆</span> <span>Nº1 EM VENDAS</span>
-                                    </li>
-                                    <li class="badge exclusivo">
-                                        <span aria-hidden="true">💎</span> <span>EDIÇÃO LIMITADA</span>
-                                    </li>
-                                </ul>
+                                <section class="badges-produto">
+                                    <p class="badge novo"><span>🆕</span> LANÇAMENTO</p>
+                                    <p class="badge melhor-vendido"><span>🏆</span> Nº1 EM VENDAS</p>
+                                    <p class="badge exclusivo"><span>💎</span> EDIÇÃO LIMITADA</p>
+                                </section>
                             </aside>
                     </div>
 
@@ -92,15 +85,12 @@
                 </aside>
             </header>
 
-            <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-            <div class="secao-info">
-                <!-- PROBLEMA: h1 usado fora de ordem hierárquica -->
-                <h1>Informações do Produto</h1>
+            <section class="secao-info" aria-labelledby="titulo-produto-info">
+                <h2 id="titulo-produto-info">Informações do Produto</h2>
 
                 <div class="info-produto">
                     <div class="descricao-principal">
-                        <!-- PROBLEMA: h3 usado sem h2 anterior -->
-                        <h3>Descrição</h3>
+                        <h2>Descrição</h2>
                         <p>O Essencia de Suvacu é uma fragrância envolvente que combina notas florais de jasmim e rosas
                             com toques cítricos de bergamota italiana. Perfeito para ocasiões especiais, desperta
                             confiança e
@@ -109,75 +99,59 @@
 
                     <div class="grid-info">
                         <div class="card-info">
-                            <h3><span>🌸</span> Notas Olfativas</h3>
-                            <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
-                            <div>
-                                <div><strong>Notas de Topo:</strong> Bergamota, Limão Siciliano, Pêra
-                                </div>
-                                <div><strong>Notas de Coração:</strong> Jasmim, Rosa Damascena, Peônia
-                                </div>
-                                <div><strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar Branco
-                                </div>
-                            </div>
+                            <h3><label>🌸</label> Notas Olfativas</h3>
+                            <ul>
+                                <li><strong>Notas de Topo:</strong> Bergamota, Limão Siciliano, Pêra
+                                </li>
+                                <li><strong>Notas de Coração:</strong> Jasmim, Rosa Damascena, Peônia
+                                </li>
+                                <li><strong>Notas de Fundo:</strong> Sândalo, Âmbar, Almíscar Branco
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="card-info">
-                            <h3><span>📋</span> Especificações Técnicas</h3>
-                            <!-- PROBLEMA: Lista sem estrutura semântica apropriada -->
-                            <div>
-                                <div>Concentração: Eau de Parfum 20%</div>
-                                <div>Fixação: 8 a 12 horas</div>
-                                <div><span>🏆</span> Melhor Fragrância Feminina 2024
-                                </div>
-                                <div><span>📦</span> Embalagem premium</div>
-                            </div>
+                            <h3>📋 Especificações Técnicas</h3>
+                            <ul>
+                                <li>Concentração: Eau de Parfum 20%</li>
+                                <li>Fixação: 8 a 12 horas</li>
+                                <li><span>🏆</span> Melhor Fragrância Feminina 2024</li>
+                                <li><span>📦</span> Embalagem premium</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="avaliacoes-destaque">
                         <h3><span>⭐</span> O que dizem nossos clientes</h3>
-                        <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
                         <div class="depoimento-cliente">
-                            <!-- PROBLEMA: Alt text genérico -->
-                            <img src="/img/nonno.tiff" alt="bixim malacabado" class="foto-cliente" loading="lazy"
+                            <img src="/img/nonno.tiff" alt="Marceloo" class="foto-cliente" loading="lazy"
                                 onerror="this.style.display='none'">
-                            <!-- PROBLEMA: Citação sem tag semântica apropriada -->
-                            <div>
-                                <p>"Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah"</p>
-                                <span>- Marc Nonno, Turim - Itália</span>
-                            </div>
+                            <p>"Antes eu passava qualquer paninho molhado, agora me transformei com Sifurrah"</p>
+                            <span>- Marc Nonno, Turim - Itália</span>
                         </div>
 
                         <!-- PROBLEMA: Depoimento sem estrutura semântica de artigo -->
                         <div class="depoimento-cliente">
-                            <!-- PROBLEMA: Citação sem tag semântica apropriada -->
-                            <div>
-                                <p>"Perfume maravilhoso que elimina qualquer cheiro de "curry" do meu corpo. Minha
-                                    namorada vai ao delírio"
-                                </p>
-                                <span>- Baran Gaum, Istambul - Turquia</span>
-                            </div>
-                            <!-- PROBLEMA: Alt text genérico -->
-                            <img src="/img/baran.tiff" alt="bixim feiu" class="foto-cliente" loading="lazy"
-                                onerror="this.style.display='none'">
+                            <article class="depoimento-artigo">
+                                <figure>
+                                    <img src="/img/baran.tiff" alt="Baran Gaum sorrindo, cliente de Istambul, Turquia" class="foto-cliente" loading="lazy" onerror="this.style.display='none'">
+                                    <figcaption>- Baran Gaum, Istambul - Turquia</figcaption>
+                                </figure>
+                                <blockquote>
+                                    <p>"Perfume maravilhoso que elimina qualquer cheiro de 'curry' do meu corpo. Minha namorada vai ao delírio"</p>
+                                </blockquote>
+                            </article>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-              <!-- PROBLEMA: Div usada em vez de tag semântica de seção -->
-              <div id="secao-compra" class="secao-compra">
-                <!-- PROBLEMA: h6 usado em hierarquia incorreta -->
-                <h6 id="titulo-compra">
+            <section id="secao-compra" class="secao-compra" aria-labelledby="titulo-compra">
+                <h2 id="titulo-compra">
                     <span>🛒</span>
                     Fazer Pedido
-                </h6>
-                <!-- PROBLEMA: ORDEM DOS PASSOS COMPLETAMENTE ERRADA! -->
-            <!-- Deveria ser: Passo 1 → 2 → 3 → 4, mas está 4 → 3 → 1 → 2 -->
-
-                <!-- PROBLEMA: Formulário sem atributos de acessibilidade -->
+                </h2>
                 <form novalidate>
-                    <!-- PROBLEMA: Barra de progresso sem atributos ARIA -->
                     <div class="progresso-form">
                         <div class="barra-progresso">
                             <div class="progresso-atual" style="width: 25%"></div>
@@ -185,7 +159,6 @@
                         <span class="texto-progresso">Passo <span id="passo-atual">1</span> de 4</span>
                     </div>
 
-                                        <!-- PROBLEMA: Resumo do pedido sem contexto semântico e sem atualizações em tempo real -->
             
 
 
@@ -268,7 +241,7 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </section>
 
             <!-- PASSO 3 EM SEGUNDO (ERRADO!) -->
                     <!-- PROBLEMA: Fieldset sem legend apropriada -->
